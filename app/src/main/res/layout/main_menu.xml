@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@drawable/modern_background2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:onClick="onTutorial"
+            android:src="@drawable/orange_bar_tutorial"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp"/>
+
+    <ImageView
+            android:id="@+id/decibelStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:src="@drawable/logo_title"
+            android:textSize="30sp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+
+    <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:onClick="onTest"
+            android:src="@drawable/orange_bar_test"
+            android:layout_marginBottom="34dp" android:layout_above="@+id/imageButton4"
+            android:layout_centerHorizontal="true"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/imageButton2"
+            android:layout_marginRight="62dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_title"
+            android:textSize="20sp"
+            android:id="@+id/sub_title"
+            android:layout_below="@+id/decibelStatus" android:layout_alignRight="@+id/decibelStatus"
+            android:layout_marginTop="28dp"/>
+
+</RelativeLayout>
