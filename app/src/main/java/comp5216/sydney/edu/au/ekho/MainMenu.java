@@ -1,7 +1,7 @@
-package comp5216.sydney.edu.au.bubblepop;
+package comp5216.sydney.edu.au.ekho;
 
 /**
- * Created by cnin0770 on 16/10/16.
+ * Created by cnin0770 on 14/10/16.
  */
 
 import android.app.Activity;
@@ -23,7 +23,7 @@ public class MainMenu extends Activity {
     }
 
     public void onTest(View v) {
-        Intent intent = new Intent(this, MainActivity.class); // intent used to launch activity
+        Intent intent = new Intent(this, MainTest.class); // intent used to launch activity
         startActivity(intent);
     }
 

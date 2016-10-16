@@ -1,4 +1,4 @@
-package comp5216.sydney.edu.au.bubblepop;
+package comp5216.sydney.edu.au.ekho;
 
 import android.content.Context;
 import android.util.TypedValue;

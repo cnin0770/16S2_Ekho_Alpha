@@ -1,4 +1,4 @@
-package comp5216.sydney.edu.au.bubblepop;
+package comp5216.sydney.edu.au.ekho;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 /**
- * Created by cnin0770 on 16/10/16.
+ * Created by cnin0770 on 14/10/16.
  */
 public class Tutorial extends Activity{
     @Override

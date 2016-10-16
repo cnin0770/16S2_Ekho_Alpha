@@ -1,4 +1,4 @@
-package comp5216.sydney.edu.au.bubblepop;
+package comp5216.sydney.edu.au.ekho;
 
 import android.graphics.Color;
 import android.os.AsyncTask;
@@ -19,10 +19,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity
+public class MainTest extends AppCompatActivity
         implements Balloon.BalloonListener {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "MainTest";
 
     private static final int TOTAL_BALLOONS = 30;
 
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity
 
     private void finishTest() {
         //probably not going to use this method anymore
-        Toast.makeText(MainActivity.this,
+        Toast.makeText(MainTest.this,
                 R.string.you_finished,
                 Toast.LENGTH_LONG).show();
         mPlaying = false;
