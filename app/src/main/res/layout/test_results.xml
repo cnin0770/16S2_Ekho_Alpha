@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:textColor="@android:color/black">
+
+    <!-- 3 columns -->
+    <TableRow
+        android:id="@+id/nameRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/nameView"
+            android:text="Name: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/patient_name"
+            android:layout_span="2"
+            android:text="" />
+    </TableRow>
+
+    <!-- 3 columns -->
+    <TableRow
+        android:id="@+id/ageRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/ageView"
+            android:text="Age: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/patient_age"
+            android:layout_span="2"
+            android:text="" />
+    </TableRow>
+
+    <!-- just draw a red line -->
+    <View
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+
+    <!-- 4 columns -->
+    <TableRow
+        android:id="@+id/headerRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black" >
+
+        <TextView
+            android:id="@+id/headerView1"
+            android:text="Test # "
+            android:padding="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+             />
+        <TextView
+            android:id="@+id/headerView2"
+            android:text="Volume Level "
+            android:padding="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/headerView3"
+            android:text="Frequency "
+            android:padding="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/headerView4"
+            android:text="Result "
+            android:padding="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            />
+    </TableRow>
+
+        <!-- Test 1 row -->
+
+        <TableRow
+            android:id="@+id/test1Row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dip"
+            android:textColor="@android:color/black">
+
+            <TextView
+                android:id="@+id/test1View1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="1"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/test1View2"
+                android:text="5"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/test1View3"
+                android:text="500"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/test1View4"
+                android:text="Pass"
+                android:textColor="@android:color/black"
+                />
+        </TableRow>
+            <!-- Test 2 row -->
+
+            <TableRow
+                android:id="@+id/test2Row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/test2View1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:id="@+id/test2View2"
+                    android:text="9"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:id="@+id/test2View3"
+                    android:text="2000"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:id="@+id/test2View4"
+                    android:text="Pass"
+                    android:textColor="@android:color/black"
+                    />
+            </TableRow>
+
+                <!-- Test 3 row -->
+
+                <TableRow
+                    android:id="@+id/test3Row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:textColor="@android:color/black">
+
+                    <TextView
+                        android:id="@+id/test3View1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/test3View2"
+                        android:text="5"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/test3View3"
+                        android:text="250"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/test3View4"
+                        android:text="Pass"
+                        android:textColor="@android:color/black"
+                        />
+                </TableRow>
+
+                    <!-- Test 4 row -->
+
+                    <TableRow
+                        android:id="@+id/test4Row"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dip"
+                        android:textColor="@android:color/black">
+
+                        <TextView
+                            android:id="@+id/test4View1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="4"
+                            android:textColor="@android:color/black"
+                            />
+                        <TextView
+                            android:id="@+id/test4View2"
+                            android:text="3"
+                            android:textColor="@android:color/black"
+                            />
+                        <TextView
+                            android:id="@+id/test4View3"
+                            android:text="3500"
+                            android:textColor="@android:color/black"
+                            />
+                        <TextView
+                            android:id="@+id/test4View4"
+                            android:text="Pass"
+                            android:textColor="@android:color/black"
+                            />
+                    </TableRow>
+
+                        <!-- Test 5 row -->
+
+                        <TableRow
+                            android:id="@+id/test5Row"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dip"
+                            android:textColor="@android:color/black">
+
+                            <TextView
+                                android:id="@+id/test5View1"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="5"
+                                android:textColor="@android:color/black"
+                                />
+                            <TextView
+                                android:id="@+id/test5View2"
+                                android:text="7"
+                                android:textColor="@android:color/black"
+                                />
+                            <TextView
+                                android:id="@+id/test5View3"
+                                android:text="1000"
+                                android:textColor="@android:color/black"
+                                />
+                            <TextView
+                                android:id="@+id/test5View4"
+                                android:text="Pass"
+                                android:textColor="@android:color/black"
+                                />
+
+                        </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+    <TableRow
+        android:id="@+id/saveRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <!--<Button-->
+            <!--android:id="@+id/saveButton"-->
+            <!--android:layout_column="3"-->
+            <!--android:text="Save"-->
+            <!--android:onClick="onSave"/>-->
+    </TableRow>
+
+
+</TableLayout>
+

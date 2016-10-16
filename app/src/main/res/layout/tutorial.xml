@@ -1,94 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:background="#FFFFFF">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@drawable/modern_background2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="600dp" >
+    <ImageButton
+            android:id="@+id/info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:onClick="loadView1"
+            android:src="@drawable/hearing_loss"
+            android:layout_alignTop="@+id/info2" android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"/>
 
-        <ImageButton
-                android:id="@+id/infobutton1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/infobutton3"
-                android:layout_alignParentTop="true"
-                android:layout_alignRight="@+id/infobutton3"
-                android:layout_marginTop="51dp"
-                android:onClick="loadView1"
-                android:src="@drawable/hearing_loss"
-                android:background="#FFFFFF"
-                android:text="@string/infobutton1" />
+    <ImageButton
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:onClick="loadView2"
+            android:src="@drawable/symptoms"
+            android:layout_centerVertical="true" android:layout_alignLeft="@+id/decibelStatus"
+            android:layout_alignStart="@+id/decibelStatus"/>
 
-        <ImageButton
-                android:id="@+id/infobutton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/infobutton1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="60dp"
-                android:src="@drawable/symptoms"
-                android:background="#FFFFFF"
-                android:onClick="loadView2"
-                android:text="@string/infobutton2" />
+    <ImageButton
+            android:id="@+id/info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:onClick="loadView3"
+            android:src="@drawable/test_icon"
+            android:layout_alignLeft="@+id/info1"
+            android:layout_alignStart="@+id/info1" android:layout_alignTop="@+id/info4"/>
 
-        <ImageButton
-                android:id="@+id/infobutton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/infobutton2"
-                android:layout_below="@+id/infobutton2"
-                android:layout_marginTop="70dp"
-                android:onClick="loadView3"
-                android:src="@drawable/test_icon"
-                android:background="#FFFFFF"
-                android:text="@string/infobutton3" />
+    <ImageButton
+            android:id="@+id/info4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:onClick="loadView4"
+            android:src="@drawable/learn_about"
+            android:layout_above="@+id/tutorial_sub" android:layout_alignLeft="@+id/info2"
+            android:layout_alignStart="@+id/info2" android:layout_marginBottom="36dp"/>
 
-        <TextView
-                android:id="@+id/decibelStatus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/infobutton1"
-                android:layout_centerHorizontal="true"
-                android:text="What is hearing loss?" />
+    <ImageView
+            android:id="@+id/decibelStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:src="@drawable/logo_title"
+            android:textSize="30sp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
 
-        <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/infobutton2"
-                android:layout_centerHorizontal="true"
-                android:text="Symptoms of hearing loss" />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/imageButton2"
+            android:layout_marginRight="62dp"/>
 
-        <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/infobutton3"
-                android:layout_centerHorizontal="true"
-                android:text="What is the test?" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial_sub"
+            android:textSize="15sp"
+            android:id="@+id/tutorial_sub"
+            android:layout_alignParentBottom="true" android:layout_alignRight="@+id/infoTV4"
+            android:layout_alignEnd="@+id/infoTV4"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Infoview1"
+            android:textStyle="bold"
+            android:id="@+id/infoTV1"
+            android:layout_below="@+id/info1" android:layout_alignLeft="@+id/info1"
+            android:layout_alignStart="@+id/info1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Infoview2"
+            android:textStyle="bold"
+            android:id="@+id/infoTV2" android:layout_below="@+id/info2" android:layout_alignLeft="@+id/info2"
+            android:layout_alignStart="@+id/info2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Infoview3"
+            android:textStyle="bold"
+            android:id="@+id/infoTV3"
+            android:layout_below="@+id/info3" android:layout_alignLeft="@+id/info3"
+            android:layout_alignStart="@+id/info3"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Infoview4"
+            android:textStyle="bold"
+            android:id="@+id/infoTV4"
+            android:layout_alignTop="@+id/infoTV3" android:layout_alignLeft="@+id/info4"
+            android:layout_alignStart="@+id/info4"/>
 
-        <ImageButton
-                android:id="@+id/infobutton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView3"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="41dp"
-                android:background="#FFFFFF"
-                android:onClick="loadView4"
-                android:src="@drawable/learn_about"
-                android:text="@string/infobutton4" />
-
-        <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/infobutton4"
-                android:layout_centerHorizontal="true"
-                android:text="How auditory works" />
-
-    </RelativeLayout>
-
-</ScrollView>
+</RelativeLayout>

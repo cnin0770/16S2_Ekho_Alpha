@@ -1,5 +1,6 @@
 package comp5216.sydney.edu.au.ekho;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -38,6 +39,8 @@ public class MainTest extends AppCompatActivity
     private SoundHelper mSoundHelper;
     private List<Balloon> mBalloons = new ArrayList<>();
     private Button mGoButton;
+    private Button mResultsButton;
+    private Button mMainMenuButton;
     private String mNextAction = ACTION_RESTART_GAME;
     private boolean mPlaying;
     private int[] mBalloonColors = new int[3];
@@ -104,6 +107,8 @@ public class MainTest extends AppCompatActivity
 
         //Get button references
         mGoButton = (Button) findViewById(R.id.go_button);
+        mResultsButton = (Button) findViewById(R.id.test_results_button);
+        mMainMenuButton = (Button) findViewById(R.id.main_menu_button);
 
         //Handle button click
         if (mGoButton == null) throw new AssertionError();
@@ -119,7 +124,33 @@ public class MainTest extends AppCompatActivity
                 }
             });
 
+        if (mResultsButton == null) throw new AssertionError();
+        mResultsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.test_results);
+            }
+        });
+
+        if (mMainMenuButton == null) throw new AssertionError();
+        mMainMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.main_menu);
+            }
+        });
+
     }
+
+//    public void onTR() {
+//        Intent intent = new Intent(MainTest.this, TestResult.class);
+//        startActivity(intent);
+//    }
+//
+//    public void onMM() {
+//        Intent intent = new Intent(MainTest.this, MainMenu.class);
+//        startActivity(intent);
+//    }
 
     @Override
     public void onBackPressed() {

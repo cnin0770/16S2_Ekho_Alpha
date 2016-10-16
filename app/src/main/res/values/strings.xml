@@ -10,16 +10,13 @@
     <string name="instructions">When you hear a sound, pop any balloon. When there are no balloons left, press the STOP GAME button.</string>
     <string name="main_menu">Main Menu</string>
     <string name="test_results">Test Results</string>
+    <string name="tutorial_sub">Credit: \nThe research information is kindly provided by \n@Junaid Malik</string>
+    <string name="tutorial_heading">Ekho: Tutorial</string>
 
-    <string name="Infoview1">What is hearing loss?</string>
-    <string name="Infoview2">Symptoms of hearing loss</string>
-    <string name="Infoview3">What is a hearing test?</string>
-    <string name="Infoview4">How auditory works</string>
-
-    <string name="infobutton1">What is hearing loss?</string>
-    <string name="infobutton2">Symptoms of hearing loss</string>
-    <string name="infobutton3">What is the test?</string>
-    <string name="infobutton4">How auditory works</string>
+    <string name="Infoview1">About Hearing Loss</string>
+    <string name="Infoview2">Symptoms</string>
+    <string name="Infoview3">About Hearing Test</string>
+    <string name="Infoview4">About Our \nAuditory System</string>
 
     <string name="infoView1">\n•Hearing is the ability to perceive sounds. Sound occurs over a wide spectrum of frequencies.
         The human ear is sensitive to a frequency band within that spectrum expressed in decibels

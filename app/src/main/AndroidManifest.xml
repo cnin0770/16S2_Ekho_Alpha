@@ -25,6 +25,13 @@
                   android:theme="@style/FullscreenTheme">
         </activity>
 
+        <activity android:name=".Tutorial"
+                  android:label="@string/tutorial_heading">
+        </activity>
+
+        <activity android:name=".TestResult">
+        </activity>
+
         <activity
                 android:name=".InfoView1"
                 android:label="@string/Infoview1" >
